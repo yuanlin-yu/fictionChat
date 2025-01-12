@@ -23,13 +23,16 @@ git clone https://github.com/yuanlin-yu/fictionChat.git
 或从本页面下载压缩包。
 
 **2. 安装依赖**:
+
 打开项目目录，运行poetry安装依赖：
 ```
 poetry install
 ```
 
 **3. 完成部署大模型**:
+
 1、设置大语言模型参数
+
 国内推荐使用deepseek，crewai通过liteLlm调用大模型，支持国内deepseek大模型，其他模型可能要科学上网，其他支持的大模型请查看crewai官网。
 申请并获取LLM调用的api key完成后(具体申请过程查看各大LLM官方网站)，修改`.env`中的大模型参数，此处以deepseek为例：
 ```
@@ -40,14 +43,18 @@ OPENAI_MODEL_NAME = "deepseek/deepseek-chat" # 大模型引用名
 ```
 
 2、设置嵌入式模型（embedding模型）参数
+
 txt文件读取需要用到embedding模型，由于crewai支持的embedding模型有限，大多是国外的模型，需要科学上网，故此处推荐使用Ollama本地部署的大模型。
 
 安装Ollama，下载embedding模型，此处以windows系统操作为例：
+
 1）登录https://www.ollama.com/，下载ollama并安装完成，打开运行ollama即可在右下角小图标看见，代表正在运行；
+
 2）打开cmd，输入以下命令下载大模型(此处推荐使用nomic-embed-text嵌入式模型)：
 ```
 ollama run nomic-embed-text
 ```
+
 3）修改`.env`中的embedding模型参数：
 ```
 # 定义embedding模型参数

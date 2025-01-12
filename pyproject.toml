@@ -1,0 +1,20 @@
+[project]
+name = "fictionchat"
+version = "0.1.0"
+description = "fictionChat 是有一个基于crewai框架开发的，调用大模型和读取本地txt文件，实现扮演小说角色与用户对话，以及在用户输入特定场景下指定小说人物对话的AI应用。"
+authors = [
+    {name = "yuanlin yu"}
+]
+license = {text = "Apache 2.0"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai (>=0.86.0,<0.87.0)",
+    "python (>=3.12.0,<4.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

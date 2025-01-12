@@ -1,0 +1,16 @@
+answer_question_task:
+  description: >
+    根据提供的小说文件情节，以小说人物 {character} 的视角，模拟 {character} 的特征回答问题：{question}。
+  expected_output: >
+    一个符合 {character} 背景、性格和说话语气、以及小说剧情的回答，长度不超过 200 字，输出结果前需加上字符串“\n- {character}：\n”,需以第一人称方式回答。
+  agent: fiction_character
+
+summurize_dialog:
+  description: >
+    根据提供的小说文件情节，以及给定的场景 {scene}, 以小说人物 {character}和{character2} 的视角，模拟在场景 {scene} 下的相互对话。
+  expected_output: >
+    一个符合 {character} 和 {character2} 背景、性格和说话语气、小说剧情的在场景 {scene} 下的对话，只输出名字和讲话的内容，字数不少于300字，对话中不要重复念对方的名字。参考以下例子的输出形式：
+    例子：
+    - 角色A:"你好吗"
+    - 角色B:"我很好，谢谢！"
+  agent: dialog_summrizer

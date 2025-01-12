@@ -1,0 +1,3 @@
+/home/aaronyu/.local/lib/python3.12/site-packages/pydantic/_internal/_config.py:345: UserWarning: Valid config keys have changed in V2:
+* 'fields' has been removed
+  warnings.warn(message, UserWarning)

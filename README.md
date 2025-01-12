@@ -1,7 +1,9 @@
 # fictionChat
 fictionChat 是有一个基于crewai框架开发的，调用大模型和读取本地txt文件，实现扮演小说角色与用户对话，以及在用户输入特定场景下指定小说人物对话的AI应用。
 
-![DEMO](https://github.com/yuanlin-yu/fictionChat/blob/main/imgs/demo.png)
+![DEMO1](https://github.com/yuanlin-yu/fictionChat/blob/main/imgs/demo1.PNG)
+
+![DEMO2](https://github.com/yuanlin-yu/fictionChat/blob/main/imgs/demo2.PNG)
 
 主要功能：
 
@@ -15,7 +17,10 @@ fictionChat 是有一个基于crewai框架开发的，调用大模型和读取�
 
 **1. 克隆本仓库链接**:
 
-或从本页面下载。
+```
+git clone https://github.com/yuanlin-yu/fictionChat.git
+```
+或从本页面下载压缩包。
 
 **2. 安装依赖**:
 打开项目目录，运行poetry安装依赖：
